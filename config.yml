@@ -1,0 +1,60 @@
+#登陆相关配置
+users:
+  #单个用户配置
+  - user:
+      #username 学号或者工号    
+      username: 'xxx'
+      #password 密码
+      password: 'xxx'
+      #address 地址，定位信息
+      address: 中国安徽省合肥市蜀山区合欢路
+      #email 接受通知消息的邮箱
+      email: xxx@xx.com
+      #school 学校缩写  自己更改下
+      school: hfut
+
+
+#多用户配置，将下面的注释去掉即可，如果有表单内容有图片，不建议使用多用户配置
+
+
+#今日校园相关配置
+cpdaily:
+  #表单组默认选项配置
+  defaults:
+    #表单默认选项配置，按顺序，注意，只有标必填项的才处理
+      - default:
+          title: 今日在校情况
+          type: 2
+          value: 在校，校内住宿
+      - default:
+          title: 今日所在地
+          type: 1
+          value: 安徽省/合肥市/蜀山区
+      - default:
+          title: 今日晨检体温
+          type: 2
+          value: 正常，不发热
+      - default:
+          title: 今日午检体温
+          type: 2
+          value: 正常，不发热
+      - default:
+          title: 今日晚检体温
+          type: 2
+          value: 正常，不发热
+      - default:
+          title: 今日是否有咳嗽、呼吸困难、腹泻症状
+          type: 2
+          value: 否，无上述症状
+      - default:
+          title: 今日是否被医学隔离观察
+          type: 2
+          value: 否，未隔离
+      - default:
+          title: 简述今日主要行程
+          type: 1
+          value: 合肥工业大学翡翠湖校区
+      - default:
+          title: 今日晚间返回宿舍（家）时间
+          type: 1
+          value: none
